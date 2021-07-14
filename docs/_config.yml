@@ -19,20 +19,39 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Gonzalo Osende Pérez Site
-email: gonose@gmail.com
+author:
+  name: Gonzalo Osende Pérez
+  email: gonose@gmail.com
 description: Gonzalo Osende Pérez Official Portfolio Site. Here are the best examples of what this Gameplay Programmer is capable. 
-#domain: gonose.gihub.io
-#baseurl: gonose.github.io
-#url: https://gonose.github.io
-twitter_username: gonose_P
-github_username:  gonose
+
+minima:
+  skin: solarized-dark
+  date_format: "%b %-d, %Y"
+
+# generate social links in footer
+  social_links:
+    twitter: gonose_P
+    github:  gonose
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
 
 # Build settings
 theme: minima
-minima:
-  skin: dark
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
