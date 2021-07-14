@@ -21,9 +21,9 @@
 title: Gonzalo Osende Pérez Site
 email: gonose@gmail.com
 description: Gonzalo Osende Pérez Official Portfolio Site. Here are the best examples of what this Gameplay Programmer is capable. 
-domain: gonose.gihub.io
-baseurl: gonose.ith.io
-url: https://gonose.github.io
+#domain: gonose.gihub.io
+#baseurl: gonose.github.io
+#url: https://gonose.github.io
 twitter_username: gonose_P
 github_username:  gonose
 
