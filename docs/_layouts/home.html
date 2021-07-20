@@ -21,10 +21,18 @@ layout: default
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <div class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
+      <div class="post-grid-content">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <img class="post-thumbnail" 
+        {%- if post.thumbnail %}
+        src="{{ post.thumbnail }}"
+        {%- else %}
+         src="assets/images/cup-of-coffee.jpg"
+        {%- endif %}
+        ></a>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -34,9 +42,9 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-      </li>
+      </div>
       {%- endfor -%}
-    </ul>
+    </div>
 
     {% if site.paginate %}
       <div class="pager">

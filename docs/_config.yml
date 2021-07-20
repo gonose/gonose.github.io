@@ -18,11 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Gonzalo Osende Pérez Site
+title: Gonose Official Site
 author:
   name: Gonzalo Osende Pérez
   email: gonose@gmail.com
 description: Gonzalo Osende Pérez Official Portfolio Site. Here are the best examples of what this Gameplay Programmer is capable. 
+posts:
+  default_img: "assets/images/cup-of-coffee.jpg"
 
 minima:
   skin: solarized-dark

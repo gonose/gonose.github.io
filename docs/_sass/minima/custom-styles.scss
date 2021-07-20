@@ -1,2 +1,21 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+a:hover {
+	text-decoration: none;
+}
+
+div.post-grid-content {
+	width: 48%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: $on-palm) {
+	
+	div.post-grid-content {
+		width: 100%;
+	    display: block;
+	    margin: auto;
+	}
+}
