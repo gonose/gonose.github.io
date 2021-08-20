@@ -26,14 +26,15 @@ layout: default
       {%- for post in posts -%}
       <div class="post-grid-content">
         <a class="post-link" href="{{ post.url | relative_url }}">
-        <img class="post-thumbnail" 
-        {%- if post.thumbnail %}
-        src="{{ post.thumbnail }}"
-        {%- else %}
-         src="assets/images/cup-of-coffee.jpg"
-        {%- endif %}
-        ></a>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <img class="post-thumbnail" 
+          {%- if post.thumbnail %}
+          src="{{ post.thumbnail }}"
+          {%- else %}
+           src="assets/images/cup-of-coffee.jpg"
+          {%- endif %}
+          >
+        </a>
+          <a href="{{ post.url | relative_url }}" class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}

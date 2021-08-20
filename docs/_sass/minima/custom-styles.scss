@@ -5,11 +5,57 @@ a:hover {
 	text-decoration: none;
 }
 
+a.post-meta {
+	color: #e7562c;
+	display: block;
+}
 div.post-grid-content {
-	width: 48%;
+	width: 45%;
     display: inline-block;
     margin: 0 5px;
+    padding: 0 2px;
+
+    transition: .5s ease;
+
+    & img:hover {
+    	opacity: 0.3;
+    }
 }
+
+div.post-grid-content:hover {
+	box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #04add7, 0 0 0.8rem #04add7, 0 0 2.8rem #04add7, inset 0 0 1.3rem #04add7;
+}
+
+
+.site-title {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  font-size: 2.6em;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #e6572d,
+      0 0 11px #e6572d,
+      0 0 19px #e6572d,
+      0 0 40px #e6572d,
+      0 0 80px #e6572d,
+      0 0 90px #e6572d,
+      0 0 100px #e6572d,
+      0 0 150px #e6572d;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
 
 @media screen and (max-width: $on-palm) {
 	
