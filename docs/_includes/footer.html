@@ -22,16 +22,27 @@
           {%- endif %}
         </ul>
       {%- endif %}
+        <div class="social-links">
+          {%- include social.html -%}
+        </div>
       </div>
       <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+        <p class="site-description">{{ site.description | escape }}</p>
       </div>
-    </div>
-
-    <div class="social-links">
-      {%- include social.html -%}
     </div>
 
   </div>
 
 </footer>
+
+<script type="text/javascript">
+  document.getElementsByClassName("site-title")[0].onmouseleave = function() 
+  { 
+    document.getElementsByClassName("site-title")[0].classList.remove("flicker")
+  }
+
+  document.getElementsByClassName("site-title")[0].onmouseover = function() 
+  { 
+    document.getElementsByClassName("site-title")[0].classList.add("flicker")
+  }
+</script>

@@ -5,8 +5,9 @@ a:hover {
 	text-decoration: none;
 }
 
+
 a.post-meta {
-	color: #e7562c;
+	color: #2aa198;
 	display: block;
 }
 div.post-grid-content {
@@ -26,11 +27,14 @@ div.post-grid-content:hover {
 	box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #04add7, 0 0 0.8rem #04add7, 0 0 2.8rem #04add7, inset 0 0 1.3rem #04add7;
 }
 
+// SITE TITLE
 
 .site-title {
-  animation: flicker 1.5s infinite alternate;
-  color: #fff;
   font-size: 2.6em;
+}
+
+.flicker {
+  animation: flicker 1.5s infinite alternate;
 }
 
 /* Flickering animation */
@@ -39,20 +43,48 @@ div.post-grid-content:hover {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
       text-shadow:
-      0 0 4px #e6572d,
-      0 0 11px #e6572d,
-      0 0 19px #e6572d,
-      0 0 40px #e6572d,
-      0 0 80px #e6572d,
-      0 0 90px #e6572d,
-      0 0 100px #e6572d,
-      0 0 150px #e6572d;
+      0 0 4px #04add7,
+      0 0 11px #04add7,
+      0 0 19px #04add7,
+      0 0 40px #04add7,
+      0 0 80px #04add7,
+      0 0 90px #04add7,
+      0 0 100px #fff,
+      0 0 150px #fff;
   
   }
   
   20%, 24%, 55% {        
       text-shadow: none;
   }    
+}
+
+
+// FOOTER
+
+.site-description {
+  color: #c9c9c9;
+}
+.contact-list {
+  margin-bottom: 0;
+}
+.social-media-list {
+  display: block;
+  margin: 0;
+
+  > li {
+    float: none;
+    display: block;
+
+    > a {
+      border: none;
+      padding: 0;
+
+      > svg {
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 
